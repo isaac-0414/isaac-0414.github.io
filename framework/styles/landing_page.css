@@ -147,7 +147,10 @@
 }
 .down-arrow {
    opacity: 1;
-   animation: move 1.5s infinite;
+   /* animation: move 1.5s infinite; */
+}
+.down-arrow a {
+   scroll-behavior: smooth;
 }
 
 .down-arrow a i {

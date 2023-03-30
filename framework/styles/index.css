@@ -4,29 +4,33 @@
 @import "landing_page.css";
 @import "footer.css";
 
+* {
+   font-family:"Poppins", sans-serif;
+}
+
+/* html {
+   scroll-behavior: smooth;
+} */
 
 html, body {
    max-width: 100%;
    overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 
 body {
    position: relative;
 }
 
-html {
-   scroll-behavior: smooth;
-}
 body {
-   font-family:"Poppins", sans-serif;
    max-width: 100%;
    overflow-x: hidden;
    
-   background-image: url('../images/BIF1-980x550-classroom.png');
+   /* background-image: url('../images/BIF1-980x550-classroom.png');
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover; */
    /* width: 100%;
    height: 100%;
    top: 0;

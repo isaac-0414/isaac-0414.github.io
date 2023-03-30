@@ -42,6 +42,7 @@
 
 #navbar .open-btn, #navbar .close-btn {
    display: none;
+   padding: 0;
 }
 
 
@@ -78,6 +79,7 @@ and (max-width : 767px) {
       border: none;
       background: none;
       font-size: 25px;
+      color: #000;
    }
    #navbar .close-btn {
       position: absolute;
@@ -123,7 +125,9 @@ and (max-width : 991px) {
       border: none;
       background: none;
       font-size: 35px;
+      color: #000;
    }
+
    #navbar .close-btn {
       position: absolute;
       top: 20px;
