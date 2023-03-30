@@ -1,1 +1,322 @@
-<h1>Hello World, this is Isaac</h1>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Mono">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" type="text/css" href="framework/styles/index.css">
+      <link rel="icon" type="image/png" href="framework/images/scribear.png">
+      <title>ScribeAR</title>
+   </head>
+
+   <body>
+      <img id="background" class="img-fluid"/>
+
+
+
+      <!--landing page -->
+      <div class="container-fluid" id="landing-page">
+         <div class="container-fluid">
+            <!-- navbar (landing page header) -->
+            <header class="row container-fluid mx-0" id="l-p-navbar">
+               <nav class="navbar navbar-expand-lg navbar-light px-0 d-flex justify-content-center" id="navbar">
+                  <div class="container-fluid px-0 px-md-2">
+                     <a class="navbar-brand" href="#">S c r i b e A R</a>
+                     <div class="navbar-nav">
+                        <a class="nav-link" id="site-nav" href="#features">Features</a>
+                        <a class="nav-link" id="site-nav" href="#blog">Blog</a>
+                        <a class="nav-link" id="site-nav" href="#about-us">About us</a>
+                        <a class="nav-link" id="site-nav" href="#for-contributors">For Contributors</a>
+                        <button class="close-btn">
+                           <i class="fas fa-times close home-btn" onclick="toggleMobileNav()"></i>
+                        </button>
+                     </div>
+                     <button class="open-btn" onclick="toggleMobileNav()">
+                        <i class='fa-solid fa-bars'></i>
+                     </button>
+                  </div>
+               </nav>
+            </header>
+               
+
+            <!-- landing page text -->
+            <div class="d-flex align-items-center animated-words" id="l-p-text">
+            </div>
+
+            
+            <!-- landing page launch button -->
+            <div class="d-flex align-items-center justify-content-center" id="l-p-btn">
+               <!-- landing page launch button -->
+               <a href="https://scribear.illinois.edu/v/00008/build">
+                  <button id="launch-button">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     Launch
+                  </button>
+               </a> 
+            </div>
+
+
+               <!-- landing page down arrow icon -->
+            <div class="row align-items-first" id="l-p-arrow">
+               <div class="down-arrow">
+                  <div style="text-align: center" class="small-4 medium-4 large-4 columns";>
+                     <a href="#features" role="button" class="btn btn-lg" style="background-color:transparent";>
+                        <i class="material-icons">expand_more</i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- features section-->
+      <div class="container-fluid p-md-5 mx-0 mb-0 p-4" style="background-color:rgba(0, 0, 0, 0.8)" id=features>
+         <div class="row py-2">
+               <h2 class="display-5 fw-bold" style="color:white">Features</h2>
+               <div class="button-right";>
+                  <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
+                     <div class="flexbox">
+                           <button class="accordion" onclick="spin2()">
+                              <span id="flexbox-text" style="color:whiite; font-size: 20px;">The functionality you need
+                                 <i class="material-icons" id="arrow-right-3" style="font-size: 18px; color:white";>arrow_forward_ios</i>
+                              </span>
+                           </button>
+                           <div class="panel" style="background-color:black">
+                              <div class="container pt-5" id="hanging-icons">
+                                 <div class="row mb-2">
+                                       <div class="col-12 col-md-4 mb-4">
+                                          <div class="card border-0" style="height:300px">
+                                             <div class="card-inner">
+                                                   <div class="card-front rounded">
+                                                      <div class="card-body">
+                                                         <h2 class="card-title pt-3">Any platform, any service, anywhere.</h2>
+                                                         <i class="bi bi-headset-vr" id="vr-icon"></i>
+                                                         <i class="bi bi-phone" id="phone-icon"></i>
+                                                         <i class="bi bi-laptop" id="computer-icon"></i> 
+                                                      </div> 
+                                                   </div>
+                                                   <div class="card-back rounded">
+                                                      <div class="card-body">
+                                                      <p class="card-text p-0">Whether you’re choosing between software or hardware, ScribeAR meets you wherever you are. Conventional captioning? Augmented Reality capability? Universally accessible from any phone, tablet, or computer? Check, check, and check.</p> 
+                                                      </div>
+                                                   </div>
+                                             </div>                                        
+                                          </div>
+                                       </div>
+                                       <div class="col-12 col-md-4 mb-4">
+                                          <div class="card border-0" style="height:300px">
+                                             <div class="card-inner">
+                                                   <div class="card-front rounded">
+                                                      <div class="card-body">
+                                                         <h2 class="card-title pt-3">Native integration makes choosing easy.</h2>
+                                                         <i class="bi bi-collection" id="collection-icon"></i> 
+                                                      </div> 
+                                                   </div>
+                                                   <div class="card-back rounded">
+                                                      <div class="card-body">
+                                                      <p class="card-text p-0">With so many different captioning services out there, it can be overwhelming to have to try and find the right one. From Azure to WebSpeech, ScribeAR keeps all your captioning engines in one convenient place.</p> 
+                                                      </div>
+                                                   </div>
+                                             </div>                                        
+                                          </div>
+                                       </div>
+                                       <div class="col-12 col-md-4 mb-4">
+                                          <div class="card border-0" style="height:300px">
+                                             <div class="card-inner">
+                                                   <div class="card-front rounded">
+                                                      <div class="card-body">
+                                                         <h2 class="card-title pt-3">The little things that aren't so little.</h2>
+                                                         <i class="bi bi-gear-wide-connected" id="gear-icon"></i> 
+                                                      </div> 
+                                                   </div>
+                                                   <div class="card-back rounded">
+                                                      <div class="card-body">
+                                                      <p class="card-text p-0">Sound vizualization. Caption font customization. Edit and share tools. With so many ways to interact and personalize, ScribeAR makes your captions feel like your captions.</p> 
+                                                      </div>
+                                                   </div>
+                                             </div>                                        
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </div>
+        
+
+      <!--blog section-->
+      <div class="contaier-fluid p-md-5 mx-0 mb-0 p-4" style="background-color:rgba(238, 238, 238, 0.8)" id=blog>
+         <div class="row py-2">
+            <h2 class="display-5 fw-bold">Blog</h2>
+            <div class="button-right";>
+               <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
+                  <div class="flexbox">
+                     <a href="https://medium.com" role="button" class="btn btn-lg pl-0" style="background-color:transparent";>
+                        <span id="flexbox-text" style="color:black">ScribeAR tips and tricks</span>
+                        <i class="material-icons" id="arrow-right" style="font-size: 18px; color:black";>arrow_forward_ios</i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--for contributors section-->
+      <div class="container-fluid p-md-5 mx-0 mb-0 p-4" style="background-color:rgba(0, 0, 0, 0.8)" id=for-contributors>
+         <div class="row py-2">
+            <h2 class="display-5 fw-bold" style="color:white">For Contributors</h2>
+            <div class="button-right";>
+               <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
+                  <div class="flexbox">
+                     <button class="accordion" onclick="spin3()">
+                        <span id="flexbox-text" style="color:white; font-size: 20px;">Take a look under the hood
+                           <i class="material-icons" id="arrow-right-4" style="font-size: 18px; color:white";>arrow_forward_ios</i>
+                        </span>
+                     </button>
+                     <div class="panel" style="background-color:black; color:white;">
+                        <div class="row featurette pt-3">
+                           <div class="col-md-2 d-flex";>
+                              <i class="bi bi-file-earmark-text" style="font-size:70px" id="file-icon"></i>
+                           </div>
+                           <div class="col-md-10">
+                              <h2 class="featurette-heading">Research Paper: <span class="text-muted">Design Principles</span></h2>
+                              <p class="lead">
+                                 <a href="https://peer.asee.org/scribear-a-new-take-on-augmented-reality-captioning-for-inclusive-education-access" id="our-research-link" style="text-decoration:none">Angrave, L., & Lualdi, C. P., & Jawad, M., & Javid, T. (2021, April), ScribeAR: A New Take on Augmented-Reality Captioning for Inclusive Education Access Paper presented at 2021 Illinois-Indiana Regional Conference, Virtual. 10.18260/1-2--38276.</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="row featurette pt-3";>
+                           <div class="col-md-2 d-flex";>
+                              <i class="bi bi-github" style="font-size:70px" id="github-icon"></i>
+                           </div>
+                           <div class="col-md-10">
+                              <h2 class="featurette-heading">Github</h2>
+                              <p class="lead">Visit <a href="https://github.com/scribear/ScribeAR.github.io" id="github-link">Our Github page</a>  page for the latest in development and contribution opportunities.</p>    
+                           </div>
+                        </div>
+                        <div class="row featurette pt-3";>
+                           <div class="col-md-2 d-flex";>
+                              <i class="bi bi-clock-history" style="font-size:70px" id="clock-icon"></i>
+                           </div>
+                           <div class="col-md-10";>
+                              <h2 class="featurette-heading;">Version history</h2>
+                              <p class="lead">
+                                 <a href="https://scribear.illinois.edu/v/00008/build" style=color:white>00008</a> – Updated Phrase Recognition <br>
+                                 <a href="https://scribear.illinois.edu/v/00007/build" style=color:white>00007</a> – Refactored Version <br>
+                                 <a href="https://scribear.illinois.edu/v/00006/" style=color:white>00006</a> – Added StreamText compatability <br>
+                                 <a href="https://scribear.illinois.edu/v/00005/" style=color:white>00005</a> – Added audio visualizations <br>
+                                 <a href="https://scribear.illinois.edu/v/00004/" style=color:white>00004</a> – Microsoft Azure cognitive services compatibility <br>
+                                 <a href="https://scribear.illinois.edu/v/00003/" style=color:white>00003</a> – Added sidebar and changed UI components <br>
+                                 <a href="https://scribear.illinois.edu/v/00002/" style=color:white>00002</a> – Added visualizations <br>
+                                 <a href="https://scribear.illinois.edu/v/00001/" style=color:white>00001</a> – ScribeAR original version <br>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- about us section -->
+      <div class="container-fluid p-md-5 mx-0 mt-0 mb-0 p-4" style="background-color:rgba(238, 238, 238, 0.8)" id="about-us">
+         <div class="row py-2">
+            <span class="display-5 fw-bold">About Us</span>
+            <div class="button-right";>
+               <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
+                  <div class="flexbox">
+                     <button class="accordion" onclick="spin1()">
+                        <span id="flexbox-text" style="color:black; font-size: 20px;">Meet the team
+                           <i class="material-icons" id="arrow-right-2" style="font-size: 18px; color:black";>arrow_forward_ios</i>
+                        </span>
+                     </button>
+                     <div class="panel" style="background-color:#EEEEEE">
+                        <div class="container px-4 pt-5" id="hanging-icons">
+                           <div class="row">
+                              <div class="col-12 col-md-6">
+                                 <div>
+                                    <h2>What is ScribeAR?</h2>
+                                    <p>Designed with heads-up display technology in mind, ScribeAR is live transcription software that enables users of real-time captioning services to simultaneously maintain visual access to their environment. Integrated with automated speech recognition technologies, ScribeAR eliminates the need for expensive, third-party captioning services. A lightweight live-transcription platform designed with HTML5 to be platform agnostic, ScribeAR can be used on multiple devices and AR headsets.</p>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                 <div>
+                                    <h2>Our Team</h2>
+                                    <p>We are a team of undergraduate and graduate students working at the University of Illinois at Urbana-Champaign as a research group within the Grainger College of Engineering Computer Science department.</p>
+                                    <p>Interested in joining us? We'd love to hear from you—especially if you're an undergraduate or graduate student at the University of Illinois at Urbana-Champaign. <a href="mailto:scribear-support@illinois.edu" id="email-link">Send us an email</a>. We can't wait to meet you!</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- page footer -->
+      <!-- <div class="container"> -->
+      <div class="footer">
+         <div class="d-flex align-items-center justify-content-center">
+            <div class="col-5">
+               <p>
+                  <a href=https://grainger.illinois.edu><img src="framework/images/grainger.png" alt="grainger college of engineering"/>
+                  </a>
+               </p>
+            </div>
+            <div class="col-3">
+               <p class="text-center" id="vr-illinois">VR@Illinois</p>
+            </div>
+            <div class="col-4" id="3rd-img">
+               <p>
+                  <a href=https://illinois.edu>
+                     <img class="img-fluid" id="big-img" src="framework/images/illinois.png" alt="UIUC"/>
+                  </a>
+               </p>
+            </div>
+         </div>
+         <!-- <hr style="border-top: 2px solid black;"/>
+            <div class="social-icons">
+               <a href="https://github.com/yourusername" target="_blank">GitHub
+                     <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub icon" width="32" height="32">
+               </a>
+               <a href="https://linkedin.com/yourusername" target="_blank">LinkedIn
+                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="LinkedIn icon" width="32" height="32">
+               </a>
+               <a href="https://twitter.com/yourusername" target="_blank">Twitter
+                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Twitter icon" width="32" height="32">
+               </a>
+               <a href="https://discord.gg/M8dkwQUFKr" target="_blank">Discord
+                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Discord icon" width="32" height="32">
+               </a>
+               <a href="https://medium.com" target="_blank">Medium
+                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Discord icon" width="32" height="32">
+               </a>
+            </div> -->
+         <hr style="border-top: 2px solid black;"/>
+         <div class="d-flex align-items-center justify-content-center">
+            <p class="text-center text-muted">© 2022 University of Illinois Board of Trustees</p>
+         </div>
+      </div>
+         <!-- </div> -->
+
+      <!-- javascript references-->
+      <script src="framework/script/index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   </body>
+</html>

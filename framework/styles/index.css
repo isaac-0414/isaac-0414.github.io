@@ -1,0 +1,171 @@
+@import "background.css";
+@import "header.css";
+@import "card.css";
+@import "landing_page.css";
+@import "footer.css";
+
+
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+body {
+   position: relative;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+body {
+   font-family:"Poppins", sans-serif;
+   max-width: 100%;
+   overflow-x: hidden;
+   
+   background-image: url('../images/BIF1-980x550-classroom.png');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0; */
+}
+@media only screen 
+   and (device-width: 390px) 
+   and (device-height: 844px) 
+   and (-webkit-device-pixel-ratio: 3) { 
+}
+@media only screen 
+   and (device-width: 390px) 
+   and (device-height: 844px) 
+   and (-webkit-min-device-pixel-ratio: 3)
+   and (orientation: landscape) { 
+}
+#our-research-link:link {
+   color: white; 
+   background-color: transparent; 
+}
+#our-research-link:visited {
+   color: white; 
+   background-color: transparent; 
+}
+#github-link:link {
+   color: white;
+   background-color: transparent;
+}
+#github-link:visited {
+   color: white;
+   background-color: transparent;
+}
+#email-link:link {
+   color:black;
+   background-color: transparent;
+}
+#email-link:visited {
+   color:black;
+   background-color: transparent;
+}
+h1 {
+   display:flex;
+   background-color: black;
+   color: white;
+}
+/* .bg-black {
+   background-color: black;
+} */
+#features {
+   border-radius: 0px;
+   margin-left: -72px;
+   margin-right: -72px;
+}
+#blog {
+   margin-left: -72px;
+   margin-right: -72px;
+}
+#about-us {
+   margin-left: -72px;
+   margin-right: -72px;
+}
+#for-contributors {
+   margin-left: -72px;
+   margin-right: -72px;
+}
+#footer {
+   margin-left: -72px;
+   margin-right: -72px;
+}
+@keyframes fade-in {
+   0% {opacity:0;}
+   100% {opacity:1;}
+}
+.button-right {
+   margin-left: -12px;
+}
+#flexbox-text {
+   float:left;
+   color:white;
+}
+#arrow-right {
+   float:right;
+   margin-top: 7px;
+   margin-left: 4px;
+}
+#arrow-right-2 {
+   float:right;
+   margin-top: 7px;
+   margin-left: 4px;
+}
+#arrow-right-3 {
+   float:right;
+   margin-top: 7px;
+   margin-left: 4px;
+}
+#arrow-right-4 {
+   float:right;
+   margin-top: 7px;
+   margin-left: 4px;
+}
+.accordion {
+   background-color:transparent;
+   color: transparent;
+   cursor: pointer;
+   padding: 18px;
+   width: fit-content;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+}
+.panel {
+   padding: 0 18px;
+   background-color: white;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+}
+#file-icon {
+   float:left;
+   margin-top: 0px;
+   
+}
+#github-icon {
+   float:left;
+   margin-top: -15px;
+   
+}
+#clock-icon {
+   float:left;
+   margin-top: 15px;
+   
+}
+#vr-illinois {
+   font-family: "Libre Franklin";
+   font-size: 50px;
+   color:#13294B;
+}
+
+#for-contributors .col-md-2 {
+   justify-content: center;
+}
