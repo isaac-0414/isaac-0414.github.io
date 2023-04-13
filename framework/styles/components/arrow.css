@@ -1,7 +1,11 @@
 .accordion .flexbox-text .arrow {
    transform: rotate(0);
+   font-size: 18px; 
+   color:white;
 }
 
 .accordion.active .flexbox-text .arrow {
    transform: rotate(90deg);
 }
+
+
