@@ -1,0 +1,28 @@
+.grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+}
+
+.member-card {
+   width: 100%;
+}
+
+.member-card .photo {
+   width: 180px;
+   height: 180px;
+   background: #888;
+   border-radius: 50%;
+}
+
+.member-card .member-info {
+   
+}
+
+.member-card .member-info .name {
+   font-size: 28px;
+}
+
+.member-card .member-info .title {
+   font-size: 16px;
+}

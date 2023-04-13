@@ -1,0 +1,7 @@
+.accordion .flexbox-text .arrow {
+   transform: rotate(0);
+}
+
+.accordion.active .flexbox-text .arrow {
+   transform: rotate(90deg);
+}

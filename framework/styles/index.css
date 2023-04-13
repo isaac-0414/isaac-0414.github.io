@@ -1,8 +1,10 @@
-@import "background.css";
-@import "header.css";
-@import "card.css";
-@import "landing_page.css";
-@import "footer.css";
+@import "layout/background.css";
+@import "layout/header.css";
+@import "components/card.css";
+@import "components/member-card.css";
+@import "components/arrow.css";
+@import "pages/landing_page.css";
+@import "layout/footer.css";
 
 * {
    font-family:"Poppins", sans-serif;
@@ -107,9 +109,12 @@ h1 {
 .button-right {
    margin-left: -12px;
 }
-#flexbox-text {
-   float:left;
+.flexbox-text {
+   /* float:left; */
    color:white;
+   display: flex;
+   justify-content: start;
+   align-items: center;
 }
 #arrow-right {
    float:right;

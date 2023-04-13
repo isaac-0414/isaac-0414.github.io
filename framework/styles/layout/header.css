@@ -12,6 +12,7 @@
 .navbar-brand {
    text-align: center;
    font-size: 42px;
+   letter-spacing: .2em;
    font-weight: bold;
 }
 .navbar-nav {
