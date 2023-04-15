@@ -47,7 +47,7 @@ and (max-width : 767px) {
     .card-title {
         font-size: 20px;
     }
-    #features i {
+    #features .panel i {
         font-size: 70px;
     }
     #features #vr-icon, #features #phone-icon, #features #computer-icon {
@@ -65,7 +65,7 @@ and (max-width : 991px) {
     .card-title {
         font-size: 23px;
     }
-    #features i {
+    #features .panel i {
         font-size: 70px;
     }
     #features #vr-icon, #features #phone-icon, #features #computer-icon {
@@ -99,7 +99,7 @@ and (max-width : 1223px) {
     .card-title {
         font-size: 25px;
     }
-    #features i {
+    #features .panel i {
         font-size: 70px;
     }
     #features #vr-icon, #features #phone-icon, #features #computer-icon {

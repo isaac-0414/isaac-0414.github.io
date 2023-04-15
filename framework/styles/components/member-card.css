@@ -24,7 +24,12 @@
    text-align: center;
 }
 
-.member-card .member-info .title {
+.member-card .member-info .description {
+   font-size: 16px;
+   text-align: center;
+}
+
+.member-card .member-info h5 {
    font-size: 16px;
    text-align: center;
 }
@@ -45,8 +50,13 @@ and (max-width : 767px) {
       font-size: 16px;
    }
    
-   .member-card .member-info .title {
+   .member-card .member-info .description {
       font-size: 10px;
+   }
+
+   .member-card .member-info h5 {
+      font-size: 12px;
+      text-align: center;
    }
 }
 
@@ -67,8 +77,13 @@ and (max-width : 991px) {
       font-size: 22px;
    }
    
-   .member-card .member-info .title {
+   .member-card .member-info .description {
       font-size: 12px;
+   }
+
+   .member-card .member-info h5 {
+      font-size: 14px;
+      text-align: center;
    }
 }
 
@@ -90,8 +105,13 @@ and (orientation : landscape) {
       font-size: 20px;
    }
    
-   .member-card .member-info .title {
+   .member-card .member-info .description {
       font-size: 12px;
+   }
+
+   .member-card .member-info h5 {
+      font-size: 14px;
+      text-align: center;
    }
 }
 
@@ -113,8 +133,13 @@ and (orientation : portrait) {
       font-size: 22px;
    }
    
-   .member-card .member-info .title {
+   .member-card .member-info .description {
       font-size: 12px;
+   }
+
+   .member-card .member-info h5 {
+      font-size: 14px;
+      text-align: center;
    }
 }
 
@@ -135,8 +160,13 @@ and (max-width : 1223px) {
       font-size: 22px;
    }
    
-   .member-card .member-info .title {
+   .member-card .member-info .description {
       font-size: 12px;
+   }
+
+   .member-card .member-info h5 {
+      font-size: 14px;
+      text-align: center;
    }
 }
 

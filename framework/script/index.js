@@ -51,37 +51,37 @@ const currentMembersInfo = [
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
    {
       photo: "",
       name: "First Last",
-      title: "Research Assistant"
+      description: "Research Assistant"
    },
 ];
 
@@ -97,12 +97,11 @@ for (member of currentMembersInfo) {
          <h2 class="name">
             ${member.name}
          </h2>
-         <p class="title">
-            ${member.title}
+         <p class="description">
+            ${member.description}
          </p>
       </div>
    </div>
    `;
    currentMemberDiv.append(tpl.content);
-
 }

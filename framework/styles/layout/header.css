@@ -55,7 +55,7 @@ and (max-width : 767px) {
    }
    .navbar-nav {
       transform: translateX(-100%);
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: 100vh;
@@ -102,7 +102,7 @@ and (max-width : 991px) {
    }
    .navbar-nav {
       transform: translateX(-100%);
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: 100vh;

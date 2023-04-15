@@ -28,10 +28,10 @@
                   <div class="container-fluid px-0 px-md-2">
                      <a class="navbar-brand" href="#">ScribeAR</a>
                      <div class="navbar-nav">
-                        <a class="nav-link" id="site-nav" href="#features">Features</a>
-                        <a class="nav-link" id="site-nav" href="#blog">Blog</a>
-                        <a class="nav-link" id="site-nav" href="#about-us">About us</a>
-                        <a class="nav-link" id="site-nav" href="#for-contributors">For Contributors</a>
+                        <a class="nav-link" id="site-nav" href="#features" onclick="toggleMobileNav()">Features</a>
+                        <!-- <a class="nav-link" id="site-nav" href="#blog" onclick="toggleMobileNav()">Blog</a> -->
+                        <a class="nav-link" id="site-nav" href="#about-us" onclick="toggleMobileNav()">About us</a>
+                        <a class="nav-link" id="site-nav" href="#for-contributors" onclick="toggleMobileNav()">For Contributors</a>
                         <button class="close-btn">
                            <i class="fas fa-times close home-btn" onclick="toggleMobileNav()"></i>
                         </button>
@@ -210,7 +210,6 @@
                                     </span>
                                  </button>
                                  <div class="panel mt-4" style="background-color:#EEEEEE; padding: 0;">
-                                    <h4>Founders</h4>
                                     <div class="founders grid my-3">
                                        <div class="member-card d-flex flex-column align-items-center">
                                           <div class="photo">
@@ -220,7 +219,8 @@
                                              <h2 class="name">
                                                 Lawrence Angrave
                                              </h2>
-                                             <p class="title">
+                                             <h5>(co-principal investigator)</h5>
+                                             <p class="description">
                                                 Computer Science Professor
                                              </p>
                                           </div>
@@ -233,7 +233,8 @@
                                              <h2 class="name">
                                                 Colin Lualdi
                                              </h2>
-                                             <p class="title">
+                                             <h5>(co-principal investigator)</h5>
+                                             <p class="description">
                                                 Department of Physics
                                              </p>
                                           </div>
@@ -281,7 +282,7 @@
                      </button>
                      <div class="panel" style="background-color:black; color:white;">
                         <div class="row featurette pt-3">
-                           <div class="col-md-2 d-flex";>
+                           <div class="col-md-2 d-flex">
                               <i class="bi bi-file-earmark-text" style="font-size:70px" id="file-icon"></i>
                            </div>
                            <div class="col-md-10">
@@ -328,19 +329,27 @@
       <!-- page footer -->
       <!-- <div class="container"> -->
       <div class="footer">
-         <div class="d-flex align-items-center justify-content-center">
-            <div class="col-5">
+         <h4 class="px-4 pt-5" style="color: #13294B;">
+            ScribeAR is funded by an award from Microsoft for accessible research, an internal University of Illinois Augmented Reality award, and the University of Illinois Department of Physics
+         </h4>
+         <div class="row d-flex align-items-center justify-content-center px-4">
+            <div class="col-3">
                <p>
-                  <a href=https://grainger.illinois.edu><img src="framework/images/grainger.png" alt="grainger college of engineering"/>
+                  <a href="https://www.microsoft.com"><img src="framework/images/microsoft.png" alt="microsoft"/></a>
+               </p>
+            </div>
+            <div class="col-3">
+               <p>
+                  <a href="https://grainger.illinois.edu"><img src="framework/images/grainger.png" alt="grainger college of engineering"/>
                   </a>
                </p>
             </div>
             <div class="col-3">
                <p class="text-center" id="vr-illinois">VR@Illinois</p>
             </div>
-            <div class="col-4" id="3rd-img">
+            <div class="col-3" id="3rd-img">
                <p>
-                  <a href=https://illinois.edu>
+                  <a href="https://illinois.edu">
                      <img class="img-fluid" id="big-img" src="framework/images/illinois.png" alt="UIUC"/>
                   </a>
                </p>
