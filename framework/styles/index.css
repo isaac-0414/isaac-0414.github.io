@@ -2,6 +2,7 @@
 @import "layout/header.css";
 @import "components/card.css";
 @import "components/member-card.css";
+@import "components/past-members.css";
 @import "components/arrow.css";
 @import "pages/landing_page.css";
 @import "layout/footer.css";

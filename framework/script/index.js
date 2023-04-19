@@ -47,51 +47,71 @@ const text = ["is practical", "is accessible", "is real-time", "is live captioni
 
 changeTextAnimation("l-p-text", text);
 
+
+// The following section is to generate all the members
+
 const currentMembersInfo = [
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/yun.jpg",
+      name: "Yun Wang",
+      description: "Junior in Math and Computer Science"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/kedar.png",
+      name: "Kedar Manda",
+      description: "Freshman in Computer Science and Philosophy"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/nanma.jpg",
+      name: "Guru Nanma P",
+      description: "Master of Computer Science"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/joni.jpg",
+      name: "Joni Li",
+      description: "Master of Computer Science"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/isaac.jpg",
+      name: "Isaac Zheng",
+      description: "Sophomore in Computer Science"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/yuxuan.jpg",
+      name: "Yuxuan Chen",
+      description: "Junior in Math and Computer Science"
    },
    {
-      photo: "",
-      name: "First Last",
-      description: "Research Assistant"
+      photo: "framework/images/members/james.png",
+      name: "James Zhu",
+      description: "Sophomore in Math and Computer Science"
+   },
+   {
+      photo: "framework/images/members/xiping.png",
+      name: "Xiping Sun",
+      description: "sophomore in Computer Science"
+   },
+   {
+      photo: "framework/images/members/himnish.jpg",
+      name: " Himnish Jain",
+      description: "Sophomore doing a dual degree in Computer Science and Statistics"
    },
 ];
 
+const pastMembers = ["Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
+   "Ansh Sharma", "Brandon Dang", "Eric Armendariz", "Garima Sharma", "Alex Ackerman", "Jason", "Nikhil Richard", "Timur", 
+   "Jiaming Zhang", "Harsh Deep", "Joanna Huang", "Cindy Feng", "Mona Jawad", "Sicong Zhang", "Yun Huang", "Blair Wang", 
+   "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
+   "Xinyu Liu"];
+
 const currentMemberDiv = document.querySelector('.current-members');
 
-for (member of currentMembersInfo) {
+for (const member of currentMembersInfo) {
    let tpl = document.createElement("template");
    tpl.innerHTML = `
    <div class="member-card d-flex flex-column align-items-center">
       <div class="photo">
+         <img src=${member.photo} class="rounded-circle" alt=${member.name}>
       </div>
       <div class="member-info d-flex flex-column align-items-center">
          <h2 class="name">
@@ -104,4 +124,12 @@ for (member of currentMembersInfo) {
    </div>
    `;
    currentMemberDiv.append(tpl.content);
+}
+
+const pastMemberDiv = document.querySelector('.past-members');
+
+for (const member of pastMembers) {
+   const nameDiv = document.createElement("div");
+   nameDiv.innerText = member;
+   pastMemberDiv.append(nameDiv);
 }
