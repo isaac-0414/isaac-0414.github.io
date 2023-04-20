@@ -104,6 +104,8 @@ const pastMembers = ["Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank K
    "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
    "Xinyu Liu"];
 
+pastMembers.sort();
+
 const currentMemberDiv = document.querySelector('.current-members');
 
 for (const member of currentMembersInfo) {
