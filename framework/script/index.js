@@ -54,12 +54,12 @@ const currentMembersInfo = [
    {
       photo: "framework/images/members/yun.jpg",
       name: "Yun Wang",
-      description: "Junior in Math and Computer Science"
+      description: "'24 Math and Computer Science"
    },
    {
       photo: "framework/images/members/kedar.png",
       name: "Kedar Manda",
-      description: "Freshman in Computer Science and Philosophy"
+      description: "'26 Computer Science and Philosophy"
    },
    {
       photo: "framework/images/members/nanma.jpg",
@@ -74,27 +74,27 @@ const currentMembersInfo = [
    {
       photo: "framework/images/members/isaac.jpg",
       name: "Isaac Zheng",
-      description: "Sophomore in Computer Science"
+      description: "'25 Computer Science"
    },
    {
       photo: "framework/images/members/yuxuan.jpg",
       name: "Yuxuan Chen",
-      description: "Junior in Math and Computer Science"
+      description: "'24 Math and Computer Science"
    },
    {
       photo: "framework/images/members/james.png",
       name: "James Zhu",
-      description: "Sophomore in Math and Computer Science"
+      description: "'25 Math and Computer Science"
    },
    {
       photo: "framework/images/members/xiping.png",
       name: "Xiping Sun",
-      description: "sophomore in Computer Science"
+      description: "'25 Computer Science"
    },
    {
       photo: "framework/images/members/himnish.jpg",
       name: " Himnish Jain",
-      description: "Sophomore doing a dual degree in Computer Science and Statistics"
+      description: "'25 dual degree in Computer Science and Statistics"
    },
 ];
 
