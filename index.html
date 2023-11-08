@@ -3,7 +3,8 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Mono">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap">
@@ -15,9 +16,7 @@
    </head>
 
    <body>
-      <img id="background" src="framework/images/BIF1-980x550-classroom.png"/>
-
-
+      <!-- <img id="background" src="framework/images/BIF1-980x550-classroom.png"/> -->
 
       <!--landing page -->
       <div class="container-fluid" id="landing-page">
@@ -81,90 +80,88 @@
       <!-- features section-->
       <div class="container-fluid p-md-5 mx-0 mb-0 p-4" style="background-color:rgba(0, 0, 0, 0.8)" id=features>
          <div class="row py-2">
-               <h2 class="display-5 fw-bold" style="color:white">Features</h2>
-               <div class="button-right";>
-                  <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
-                     <div class="flexbox">
-                           <button class="accordion" onclick="spin2()">
-                              <span class="flexbox-text" style="color:whiite; font-size: 20px;"> Offering a flexible captioning experience
-                                 <i class="material-icons arrow">arrow_forward_ios</i>
-                              </span>
-                           </button>
-                           <div class="panel" style="background-color:black">
-                              <div class="container pt-5" id="hanging-icons">
-                                 <div class="row mb-2">
-                                       <div class="col-12 col-md-4 mb-4">
-                                          <div class="card border-0" style="height:300px">
-                                             <div class="card-inner">
-                                                   <div class="card-front rounded">
-                                                      <div class="card-body">
-                                                         <h2 class="card-title pt-3">Any device, anywhere.</h2>
-                                                         <i class="bi bi-headset-vr" id="vr-icon"></i>
-                                                         <i class="bi bi-phone" id="phone-icon"></i>
-                                                         <i class="bi bi-laptop" id="computer-icon"></i> 
-                                                      </div> 
-                                                   </div>
-                                                   <div class="card-back rounded">
-                                                      <div class="card-body">
-                                                      <p class="card-text p-0">
-                                                         ScribeAR meets you wherever you are.
-                                                         Captions on a laptop? A phone? An augmented-reality headset? Check, check, and check.
-                                                         No download required.
-                                                      </p> 
-                                                      </div>
-                                                   </div>
-                                             </div>                                        
-                                          </div>
-                                       </div>
-                                       <div class="col-12 col-md-4 mb-4">
-                                          <div class="card border-0" style="height:300px">
-                                             <div class="card-inner">
-                                                   <div class="card-front rounded">
-                                                      <div class="card-body">
-                                                         <h2 class="card-title pt-3">Choose your captioning service.</h2>
-                                                         <i class="bi bi-collection" id="collection-icon"></i> 
-                                                      </div> 
-                                                   </div>
-                                                   <div class="card-back rounded">
-                                                      <div class="card-body">
-                                                      <p class="card-text p-0">
-                                                         Looking for a no-cost solution? Stream captions with Mozilla's Web Speech API.
-                                                         Want better accuracy and more features? Microsoft Azure transcription is available (Azure subscription required).
-                                                      </p> 
-                                                      </div>
-                                                   </div>
-                                             </div>                                        
-                                          </div>
-                                       </div>
-                                       <div class="col-12 col-md-4 mb-4">
-                                          <div class="card border-0" style="height:300px">
-                                             <div class="card-inner">
-                                                   <div class="card-front rounded">
-                                                      <div class="card-body">
-                                                         <h2 class="card-title pt-3">The little things that aren't so little.</h2>
-                                                         <i class="bi bi-gear-wide-connected" id="gear-icon"></i> 
-                                                      </div> 
-                                                   </div>
-                                                   <div class="card-back rounded">
-                                                      <div class="card-body">
-                                                      <p class="card-text p-0">
-                                                         Themes. Font size. Language selection*. Custom word lists *. 
-                                                         With so many ways to interact and personalize, ScribeAR makes your captions your captions.
-                                                      </p>
-                                                      <p class="card-text-small">
-                                                         *Requires Azure subscription
-                                                      </p> 
-                                                      </div>
-                                                   </div>
-                                             </div>                                        
-                                          </div>
-                                       </div>
+            <h2 class="display-5 fw-bold" style="color:white">Features</h2>
+            <div class="mx-auto small-4 medium-4 large-4 columns";>
+               <div class="flexbox">
+                     <button class="accordion px-0" onclick="spin2()">
+                        <span class="flexbox-text" style="color:whiite; font-size: 20px;"> Offering a flexible captioning experience
+                           <i class="material-icons arrow">arrow_forward_ios</i>
+                        </span>
+                     </button>
+                     <div class="panel mx-auto" style="background-color:black">
+                        <div class="container pt-5" id="hanging-icons">
+                           <div class="row mb-2">
+                                 <div class="col-12 col-md-4 mb-4">
+                                    <div class="card border-0" style="height:300px">
+                                       <div class="card-inner">
+                                             <div class="card-front rounded">
+                                                <div class="card-body">
+                                                   <h2 class="card-title pt-3">Any device, anywhere.</h2>
+                                                   <i class="bi bi-headset-vr" id="vr-icon"></i>
+                                                   <i class="bi bi-phone" id="phone-icon"></i>
+                                                   <i class="bi bi-laptop" id="computer-icon"></i> 
+                                                </div> 
+                                             </div>
+                                             <div class="card-back rounded">
+                                                <div class="card-body">
+                                                <p class="card-text p-0">
+                                                   ScribeAR meets you wherever you are.
+                                                   Captions on a laptop? A phone? An augmented-reality headset? Check, check, and check.
+                                                   No download required.
+                                                </p> 
+                                                </div>
+                                             </div>
+                                       </div>                                        
+                                    </div>
                                  </div>
-                              </div>
+                                 <div class="col-12 col-md-4 mb-4">
+                                    <div class="card border-0" style="height:300px">
+                                       <div class="card-inner">
+                                             <div class="card-front rounded">
+                                                <div class="card-body">
+                                                   <h2 class="card-title pt-3">Choose your captioning service.</h2>
+                                                   <i class="bi bi-collection" id="collection-icon"></i> 
+                                                </div> 
+                                             </div>
+                                             <div class="card-back rounded">
+                                                <div class="card-body">
+                                                <p class="card-text p-0">
+                                                   Looking for a no-cost solution? Stream captions with Mozilla's Web Speech API.
+                                                   Want better accuracy and more features? Microsoft Azure transcription is available (subscription required).
+                                                </p> 
+                                                </div>
+                                             </div>
+                                       </div>                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-4 mb-4">
+                                    <div class="card border-0" style="height:300px">
+                                       <div class="card-inner">
+                                             <div class="card-front rounded">
+                                                <div class="card-body">
+                                                   <h2 class="card-title pt-3">The little things that aren't so little.</h2>
+                                                   <i class="bi bi-gear-wide-connected" id="gear-icon"></i> 
+                                                </div> 
+                                             </div>
+                                             <div class="card-back rounded">
+                                                <div class="card-body">
+                                                <p class="card-text p-0">
+                                                   Themes. Font size. Language selection*. Custom word lists *. 
+                                                   With so many ways to interact and personalize, ScribeAR makes your captions your captions.
+                                                </p>
+                                                <p class="card-text-small">
+                                                   *Requires Azure subscription
+                                                </p> 
+                                                </div>
+                                             </div>
+                                       </div>                                        
+                                    </div>
+                                 </div>
                            </div>
+                        </div>
                      </div>
-                  </div>
                </div>
+            </div> 
          </div>
       </div>
         
@@ -189,7 +186,7 @@
       <!-- about us section -->
       <div class="container-fluid p-md-5 mx-0 mt-0 mb-0 p-4" style="background-color:rgba(238, 238, 238, 0.8)" id="about-us">
          <div class="row py-2">
-            <span class="display-5 fw-bold">About Us</span>
+            <span class="display-5 fw-bold">About ScribeAR</span>
             <div class="button-right";>
                <div style="text-align: left" class="small-4 medium-4 large-4 columns";>
                   <div class="flexbox">
@@ -200,47 +197,62 @@
                      </button>
                      <div class="panel" style="background-color:#EEEEEE">
                         <div class="container px-4 py-5" id="hanging-icons">
-                           <div class="row">
-                              <div class="col-12 col-md-6">
-                                 <div>
-                                    <h2>What is ScribeAR?</h2>
-                                    <div>
-                                       <p>The ScribeAR project is exploring ways to enhance real-time captioning as a communication access tool.</p>
-                                       <p>Traditional captioning paradigms are often constraining:</p>
-                                       <ul>
-                                          <li><b>Availability</b>: Captions might be available only for specific events, such as when watching a movie or taking a class. But life takes place 24/7.</li>
-                                          <li><b>Participation</b>: At in-person events, captions are typically streamed on laptops or mobile devices. Captioning users thus need to repeatedly glance at the captioning stream, distracting them from the event itself.</li>
-                                          <li><b>Logistics</b>: The logistics of arranging for conventional captioning services (cost, scheduling, etc.) make it difficult for them to support spontaneous interactions (think of water cooler chats).</li>
-                                       </ul>
-                                       <!-- <p>ScribeAR address some of these challenges with creative design:</p> -->
-                                       <button class="accordion" style="padding: 0">
-                                          <span class="flexbox-text" style="color:black; font-size: 16px;">ScribeAR address some of these challenges with creative design 
-                                             <i class="material-icons arrow" style="font-size: 14px; color:black; font-weight: bold;">arrow_forward_ios</i>
-                                          </span>
-                                       </button>
-                                       <div class="panel" style="background-color:#EEEEEE; margin-top: 1em; margin-bottom: margin-bottom; padding: 0;">
-                                          <ul>
-                                             <li><b>Flexibility</b>: ScribeAR is a lightweight, platform-agnostic web app that can run on nearly any device with a web browser (laptops, mobile devices, or even augmented-reality headsets), anytime and anywhere with an internet connection.</li>
-                                             <li><b>Connection</b>: ScribeAR is specifically designed to enable streaming captions on an augmented-reality (AR) headset in addition to conventional devices. With an AR headset, users can view the captions while directly engaging in the events at hand, achieving a level of connection not always possible with traditional captioning.</li>
-                                             <li><b>Options</b>: ScribeAR offers a choice of speech-to-text engines. The Web Speech API is a no-cost solution that enables access to basic captioning for anyone, anytime. Microsoft Azure is a low-cost alternative that comes with more features for when better performance justifies the cost.</li>
-                                          </ul>
-                                       </div>
-                                    </div>
+                           <div class="row mb-5">
+                              <h2>What is ScribeAR?</h2>
+                              <p>The ScribeAR project is exploring ways to enhance real-time captioning as a communication access tool.</p>
+                              <h5 class="fw-bold mt-3 mb-3">Traditional captioning paradigms can be constraining:</h5>
+                              <div class="row m-0">
+                                 <div class="col-3 me-5 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Availability</h5>
+                                    <p class="text-center">
+                                       Captions might be available only for specific events, such as when watching a movie or taking a class. But life takes place 24/7.
+                                    </p>
+                                 </div>
+                                 <div class="col-3 me-5 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Participation</h5>
+                                    <p class="text-center">
+                                       Captions are often streamed on laptops or mobile devices. User attention is therefore split between the captions and the action.
+                                    </p>
+                                 </div>
+                                 <div class="col-3 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Logistics</h5>
+                                    <p class="text-center">
+                                       The need to schedule captioning services makes it difficult for them to support spontaneous interactions. Water cooler chats, anyone?
+                                    </p>
                                  </div>
                               </div>
-                              <div class="col-12 col-md-6">
-                                 <div>
-                                    <h2>Our Team</h2>
-                                    <p>We are a team of undergraduate and graduate students working at the University of Illinois Urbana-Champaign as a research group within the Grainger College of Engineering.</p>
-                                    <p>Interested in joining us? We'd love to hear from you—especially if you're an undergraduate or graduate student at the University of Illinois <a href="mailto:scribear-support@illinois.edu" id="email-link">Send us an email</a>.</p>
+                              <h5 class="fw-bold mt-5 mb-3">ScribeAR strives to address some of these challenges with creative design:</h5>
+                              <div class="row m-0">
+                                 <div class="col-3 me-5 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Flexibility</h5>
+                                    <p class="text-center">
+                                       ScribeAR is a lightweight, web app that can run on nearly any device with a web browser anytime and anywhere with an internet connection.
+                                    </p>
+                                 </div>
+                                 <div class="col-3 me-5 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Connection</h5>
+                                    <p class="text-center">
+                                       ScribeAR is compatible with  augmented-reality (AR) headsets, which allow users to view captions while fully  engaging in the action.
+                                    </p>
+                                 </div>
+                                 <div class="col-3 p-3 pt-0 border border-2 border-dark rounded-5">
+                                    <h5 class="fw-bold my-4 text-center">Availability</h5>
+                                    <p class="text-center">
+                                       ScribeAR features several speech-to-text engines. The no-cost Web Speech API enables basic captioning for anyone, anytime. Low-cost Microsoft Azure offers more features, when needed.
+                                    </p>
                                  </div>
                               </div>
                            </div>
                            <div class="row">
+                              <h2>Meet the Team</h2>
+                              <p>We are a team of undergraduate and graduate students working at the University of Illinois Urbana-Champaign as a research group within the Grainger College of Engineering.</p>
+                              <p>Interested in joining us? We'd love to hear from you—especially if you're an undergraduate or graduate student at the University of Illinois. <a href="mailto:scribear-support@illinois.edu" id="email-link">Send us an email</a></p>
+                           </div>
+                           <div class="row">
                               <div class="flexbox">
                                  <button class="accordion" style="padding: 0; margin-top: 20px;">
-                                    <span class="flexbox-text" style="color:black;"><h4 class="mb-0">Team Members</h4>
-                                       <i class="material-icons arrow" style="font-size: 18px; color:black";>arrow_forward_ios</i>
+                                    <span class="flexbox-text" style="color:black;"><h2 class="mb-0">Team Members</h2>
+                                       <i class="material-icons arrow" style="font-size: 24px; color:black";>arrow_forward_ios</i>
                                     </span>
                                  </button>
                                  <div class="panel mt-4" style="background-color:#EEEEEE; padding: 0;">
@@ -319,9 +331,14 @@
                               <i class="bi bi-file-earmark-text" style="font-size:70px" id="file-icon"></i>
                            </div>
                            <div class="col-md-10">
-                              <h2 class="featurette-heading">Research Paper: <span class="text-muted">Design Principles</span></h2>
+                              <h2 class="featurette-heading">Research Papers: <span class="text-muted">Design Principles</span></h2>
+                              <h4 class="mt-4">Design Principles</h4>
                               <p class="lead">
-                                 <a href="https://peer.asee.org/scribear-a-new-take-on-augmented-reality-captioning-for-inclusive-education-access" id="our-research-link" style="text-decoration:none">Angrave, L., & Lualdi, C. P., & Jawad, M., & Javid, T. (2021, April), ScribeAR: A New Take on Augmented-Reality Captioning for Inclusive Education Access Paper presented at 2021 Illinois-Indiana Regional Conference, Virtual. 10.18260/1-2--38276.</a>
+                                 <a href="https://peer.asee.org/scribear-a-new-take-on-augmented-reality-captioning-for-inclusive-education-access" id="our-research-link" style="text-decoration:none" target="_blank">Angrave, L., & Lualdi, C. P., & Jawad, M., & Javid, T. (2021, April), ScribeAR: A New Take on Augmented-Reality Captioning for Inclusive Education Access Paper presented at 2021 Illinois-Indiana Regional Conference, Virtual. 10.18260/1-2--38276.</a>
+                              </p>
+                              <h4 class="mt-4">Integrating Deep Learning Tools</h4>
+                              <p class="lead">
+                                 <a href="https://peer.asee.org/44572" id="our-research-link" style="text-decoration:none" target="_blank">Wang, Y., & Lualdi, C. P., & Angrave, L., & Purushotam, G. N. (2023, June), Using Deep Learning and Augmented Reality to Improve Accessibility: Inclusive Conversations Using Diarization, Captions, and VisualizationPaper presented at 2023 ASEE Annual Conference & Exposition, Baltimore , Maryland.</a>
                               </p>
                            </div>
                         </div>
@@ -362,7 +379,7 @@
       <!-- page footer -->
       <!-- <div class="container"> -->
       <div class="footer">
-         <h4 class="award-text px-4 pt-5" style="color: #13294B;">
+         <h4 class="award-text px-4 pt-5 text-white">
             ScribeAR is funded by an award from Microsoft for accessible research, an internal University of Illinois Augmented Reality award, and the University of Illinois Department of Physics
          </h4>
          <div class="row d-flex align-items-center justify-content-center px-4">
@@ -388,27 +405,9 @@
                </p>
             </div>
          </div>
-         <!-- <hr style="border-top: 2px solid black;"/>
-            <div class="social-icons">
-               <a href="https://github.com/yourusername" target="_blank">GitHub
-                     <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub icon" width="32" height="32">
-               </a>
-               <a href="https://linkedin.com/yourusername" target="_blank">LinkedIn
-                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="LinkedIn icon" width="32" height="32">
-               </a>
-               <a href="https://twitter.com/yourusername" target="_blank">Twitter
-                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Twitter icon" width="32" height="32">
-               </a>
-               <a href="https://discord.gg/M8dkwQUFKr" target="_blank">Discord
-                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Discord icon" width="32" height="32">
-               </a>
-               <a href="https://medium.com" target="_blank">Medium
-                     <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Discord icon" width="32" height="32">
-               </a>
-            </div> -->
          <hr style="border-top: 2px solid black;"/>
          <div class="d-flex align-items-center justify-content-center">
-            <p class="text-center text-muted">© 2022 University of Illinois Board of Trustees</p>
+            <p class="text-center text-white" id="copy-right">© 2022 University of Illinois Board of Trustees</p>
          </div>
       </div>
 

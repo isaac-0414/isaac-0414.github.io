@@ -23,11 +23,10 @@ html, body {
 
 body {
    position: relative;
-}
-
-body {
-   max-width: 100%;
-   overflow-x: hidden;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   overflow-y: scroll;
    
    /* background-image: url('../images/BIF1-980x550-classroom.png');
    background-attachment: fixed;
@@ -39,6 +38,20 @@ body {
    top: 0;
    left: 0; */
 }
+
+body::before {
+   content: "";
+   background-image: url('../images/BIF1-980x550-classroom.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: -2;
+}
+
 @media only screen 
    and (device-width: 390px) 
    and (device-height: 844px) 

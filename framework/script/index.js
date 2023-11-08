@@ -57,19 +57,19 @@ const currentMembersInfo = [
       description: "'24 Math and Computer Science"
    },
    {
-      photo: "framework/images/members/kedar.png",
-      name: "Kedar Manda",
-      description: "'26 Computer Science and Philosophy"
-   },
-   {
-      photo: "framework/images/members/nanma.jpg",
-      name: "Guru Nanma P",
-      description: "Master of Computer Science"
-   },
-   {
       photo: "framework/images/members/joni.jpg",
       name: "Joni Li",
       description: "Master of Computer Science"
+   },
+   {
+      photo: "framework/images/members/james.png",
+      name: "James Zhu",
+      description: "'25 Math and Computer Science"
+   },
+   {
+      photo: "framework/images/members/himnish.jpg",
+      name: " Himnish Jain",
+      description: "'25 dual degree in Computer Science and Statistics"
    },
    {
       photo: "framework/images/members/isaac.jpg",
@@ -81,28 +81,13 @@ const currentMembersInfo = [
       name: "Yuxuan Chen",
       description: "'24 Math and Computer Science"
    },
-   {
-      photo: "framework/images/members/james.png",
-      name: "James Zhu",
-      description: "'25 Math and Computer Science"
-   },
-   {
-      photo: "framework/images/members/xiping.png",
-      name: "Xiping Sun",
-      description: "'25 Computer Science"
-   },
-   {
-      photo: "framework/images/members/himnish.jpg",
-      name: " Himnish Jain",
-      description: "'25 dual degree in Computer Science and Statistics"
-   },
 ];
 
-const pastMembers = ["Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
-   "Ansh Sharma", "Brandon Dang", "Eric Armendariz", "Garima Sharma", "Alex Ackerman", "Jason", "Nikhil Richard", "Timur", 
+const pastMembers = ["Guru Nanma P", "Kedar Manda", "Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
+   "Ansh Sharma", "Brandon Dang", "Eric Armendariz", "Garima Sharma", "Alex Ackerman", "Jason Situ", "Nikhil Richard", "Timur Javid", 
    "Jiaming Zhang", "Harsh Deep", "Joanna Huang", "Cindy Feng", "Mona Jawad", "Sicong Zhang", "Yun Huang", "Blair Wang", 
    "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
-   "Xinyu Liu"];
+   "Xinyu Liu", "Xiping Sun"];
 
 pastMembers.sort();
 
@@ -135,3 +120,9 @@ for (const member of pastMembers) {
    nameDiv.innerText = member;
    pastMemberDiv.append(nameDiv);
 }
+
+// Get the current year
+var currentYear = new Date().getFullYear();
+    
+// Update the copy-right with the current year
+document.getElementById("copy-right").textContent = "© " + currentYear + " University of Illinois Board of Trustees";

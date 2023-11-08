@@ -23,7 +23,9 @@
     backface-visibility: hidden;
 }        
 .card-front {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:white;
     color: black;
 }
@@ -32,17 +34,19 @@
     color: black;
     transform: rotateY(180deg);
     overflow: hidden;
-    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card-text {
     padding: 15px;
     font-size: 20px;
-    text-align:left;
+    text-align: center;
 }
 
 .card-text-small {
     font-size: 16px;
-    text-align:left;
+    text-align: center;
     color: #444;
 }
 
