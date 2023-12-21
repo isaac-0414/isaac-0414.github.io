@@ -1,51 +1,85 @@
-.footer {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.4),
-    rgba(19, 40, 75, 0.3),
-    rgba(19, 40, 75, 1)
-  );
-  /* background-color: #13284b; */
+footer {
+  background: rgba(238, 238, 238, 0.8);
   border-radius: 5px;
   font-family: sans-serif;
   text-align: center;
   backdrop-filter: blur(5px);
   max-width: 100%;
   max-height: 100%;
-  padding: 20px 40px;
-}
-
-.footer {
   margin: 0;
   padding: 2vw 0;
 }
 
-.footer .award-text {
+footer .award-text {
   font-size: 20px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-top: 3rem;
+  margin-bottom: 8px;
+  color: black;
 }
 
-.footer .d-flex {
+footer .logos {
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 48px;
+  padding-right: 48px;
 }
-.footer img {
+
+footer .logo {
+  width: 25%;
+  position: relative;
+}
+
+
+footer .logo:nth-of-type(1) img {
+  width: 70%;
+}
+
+footer .logo:nth-of-type(2) img {
   width: 100%;
 }
-.footer .d-flex div:nth-of-type(3) img {
-  width: 90%;
+
+footer .logo:nth-of-type(4) img {
+  width: 65%;
+}
+
+#vr-illinois {
+   font-family: "Libre Franklin";
+   font-size: 40px;
+   font-weight: 600;
+   color:#13294B;
+}
+
+footer hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(33, 37, 41);
+  opacity: .25;
+}
+
+footer .copy-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copy-right {
+  color: black;
+  text-align: center;
 }
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 767px) {
-  .footer {
+  footer {
       padding: 20px 0;
   }
-  .footer .award-text {
+  footer .award-text {
     font-size: 10px;
   }
-  .footer #vr-illinois {
+  footer #vr-illinois {
       font-size: 16px;
   }
 }
@@ -54,13 +88,13 @@
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1024px) {
-  .footer {
+  footer {
     padding: 20px 0;
   }
-  .footer .award-text {
+  footer .award-text {
     font-size: 16px;
   }
-  .footer #vr-illinois {
+  footer #vr-illinois {
       font-size: 28px;
   }
 }
@@ -85,10 +119,10 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 992px)
 and (max-width : 1223px) {
-  .footer .award-text {
+  footer .award-text {
     font-size: 18px;
   }
-  .footer #vr-illinois {
+  footer #vr-illinois {
     font-size: 40px;
 }
 }

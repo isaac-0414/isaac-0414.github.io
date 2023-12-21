@@ -1,6 +1,8 @@
 .grid-small {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(7, 30px);
+   grid-auto-flow: column;
 }
 
 .past-members div {
@@ -15,6 +17,7 @@ and (max-width : 767px) {
    .grid-small {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(17, 18px);
    }
    
    .past-members div {
@@ -29,6 +32,7 @@ and (max-width : 991px) {
    .grid-small {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(9, 24px);
    }
    
    .past-members div {
@@ -44,6 +48,7 @@ and (orientation : landscape) {
    .grid-small {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(9, 24px);
    }
    
    .past-members div {
@@ -59,6 +64,7 @@ and (orientation : portrait) {
    .grid-small {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(11, 24px);
    }
    
    .past-members div {

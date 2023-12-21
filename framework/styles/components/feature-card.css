@@ -1,5 +1,8 @@
 .card {
-    background-color: transparent;
+    background-color: white;
+    height: 300px;
+    width: 32%;
+    border-radius: 6px;
 }
 .card-inner {
     position: relative;
@@ -8,6 +11,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 6px;
 }   
 .card:hover .card-inner {
     transform: rotateY(180deg);
@@ -28,7 +32,17 @@
     justify-content: center;
     background-color:white;
     color: black;
+    border-radius: 6px;
 }
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
 .card-back {
     background-color: white;
     color: black;
@@ -37,6 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
 }
 .card-text {
     padding: 15px;
@@ -54,6 +69,10 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (max-width : 767px) {
+    .card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
     .card-title {
         font-size: 20px;
     }

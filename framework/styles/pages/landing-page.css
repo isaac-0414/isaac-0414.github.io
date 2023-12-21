@@ -4,6 +4,8 @@
    flex-direction: column;
    justify-content: space-between;
    background: linear-gradient(0.50turn, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+   padding-left: 48px;
+   padding-right: 48px;
 }
 
 /* text animation */
@@ -11,38 +13,30 @@
    min-height: max-content;
    height: 4vh;
    display: flex;
-   position: relative;
-   display: inline-block;
+   align-items: center;
    color: rgba(255, 255, 255, 0.9);
-   background: rgba(255, 255, 255, 0); /* default color transparent */
-
-   /* "to left" / "to right" - affects initial color */
    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, black 50%) right;
    background-size: 200%;
    transition: .5s ease-out;
    background-position: left;
    text-indent: 10vw;
-}
-/* #l-p-text:hover {
-   background-position: left;
-} */
-.animated-words {
    font-family: "Roboto Mono", sans-serif;
    font-size: 24px;
-   display:flex;
    overflow: hidden;
    white-space: nowrap;
-   background-color: none;
 }
 
 
 
 
 /* launch button */
-#l-p-btn {
+#l-p-btn-container {
    height: 68vh;
    display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
 #launch-button {
    font-size: 60px;
    color: #000;
@@ -192,8 +186,10 @@
 
 
 /* down arrow */
-#l-p-arrow {
-   height: 26vh
+#l-p-arrow-container {
+   height: 26vh;
+   display: flex;
+   justify-content: center;
 }
 .down-arrow {
    opacity: 1;
@@ -218,17 +214,18 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen  
 and (max-width : 767px) {
-   #l-p-navbar {
-      padding: 0;
+   #landing-page {
+      padding-left: 24px;
+      padding-right: 24px;
    }
+
    #l-p-text {
       height: 4vh;
       background-position: left;
       text-indent: 5vw;
-   }
-   .animated-words {
       font-size: 18px;
    }
+
    #launch-button {
       font-size: 45px;
    }
@@ -238,15 +235,15 @@ and (max-width : 767px) {
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 991px) {
-   #l-p-navbar {
-      padding: 0;
+   #landing-page {
+      padding-left: 24px;
+      padding-right: 24px;
    }
+   
    #l-p-text {
       height: 5vh;
       background-position: left;
       text-indent: 5vw;
-   }
-   .animated-words {
       font-family: "Roboto Mono", sans-serif;
       font-size: 23px;
       display:flex;
@@ -254,6 +251,7 @@ and (max-width : 991px) {
       white-space: nowrap;
       background-color: none;
    }
+  
    #launch-button {
       font-size: 55px;
    }
@@ -279,9 +277,6 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 992px)
 and (max-width : 1223px) {
-   #l-p-navbar {
-      padding: 0;
-   }
    #launch-button {
       font-size: 52px;
    }

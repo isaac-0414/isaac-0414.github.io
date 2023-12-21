@@ -2,7 +2,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
          
 function toggleMobileNav() {
-   document.querySelector(".navbar-nav").classList.toggle("active");
+   document.querySelector("#l-p-header nav").classList.toggle("active");
 }
 
 for (i = 0; i < acc.length; i++) {
@@ -81,6 +81,21 @@ const currentMembersInfo = [
       name: "Yuxuan Chen",
       description: "'24 Math and Computer Science"
    },
+   {
+      photo: "framework/images/members/chengyi.jpg",
+      name: "Chengyi Wang",
+      description: "'25 Computer Science"
+   },
+   {
+      photo: "framework/images/members/default.png",
+      name: "Arman Michael Mehdipour",
+      description: "Grad in Psych/CS"
+   },
+   {
+      photo: "framework/images/members/atharva.jpg",
+      name: "Atharva Naik",
+      description: "'24 Math and Computer Science"
+   }
 ];
 
 const pastMembers = ["Guru Nanma P", "Kedar Manda", "Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
@@ -89,18 +104,17 @@ const pastMembers = ["Guru Nanma P", "Kedar Manda", "Chen Yang", "Ayan Bhowmick"
    "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
    "Xinyu Liu", "Xiping Sun"];
 
-pastMembers.sort();
-
 const currentMemberDiv = document.querySelector('.current-members');
 
+// render current members
 for (const member of currentMembersInfo) {
    let tpl = document.createElement("template");
    tpl.innerHTML = `
-   <div class="member-card d-flex flex-column align-items-center">
+   <div class="member-card">
       <div class="photo">
-         <img src=${member.photo} class="rounded-circle" alt=${member.name}>
+         <img src=${member.photo} alt=${member.name}>
       </div>
-      <div class="member-info d-flex flex-column align-items-center">
+      <div class="member-info">
          <h2 class="name">
             ${member.name}
          </h2>
@@ -112,6 +126,10 @@ for (const member of currentMembersInfo) {
    `;
    currentMemberDiv.append(tpl.content);
 }
+
+// render past members
+
+pastMembers.sort();
 
 const pastMemberDiv = document.querySelector('.past-members');
 
