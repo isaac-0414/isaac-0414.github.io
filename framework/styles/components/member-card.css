@@ -88,6 +88,10 @@ and (max-width : 991px) {
       height: 140px;
    }
 
+   .member-card .member-info.co-principal-investigator .name {
+      height: 65px;
+   }
+
    .member-card .member-info .name {
       font-size: 22px;
    }
