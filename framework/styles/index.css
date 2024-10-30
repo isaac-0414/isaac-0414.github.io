@@ -4,10 +4,10 @@
 @import "components/info-card.css";
 @import "components/member-card.css";
 @import "components/past-members.css";
-@import "pages/landing-page.css";
-@import "pages/features.css";
-@import "pages/about-us.css";
-@import "pages/for-contributors.css";
+@import "sections/landing.css";
+@import "sections/features.css";
+@import "sections/about-us.css";
+@import "sections/for-contributors.css";
 
 
 * {
