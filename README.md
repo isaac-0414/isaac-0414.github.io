@@ -55,4 +55,4 @@ const pastMembers = [
 
 ## Contact
 
-For any questions, issues, or assistance, please reach out to me (zheng72@illinois.edu or isaaczheng0414@gmail.com). I hope this documentation helps you seamlessly work with and further develop the landing page!
+For any questions, issues, or assistance, please reach out to Colin or me (zheng72@illinois.edu or isaaczheng0414@gmail.com). I hope this documentation helps you seamlessly work with and further develop the landing page!
