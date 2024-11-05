@@ -52,49 +52,24 @@ changeTextAnimation("l-p-text", text);
 
 const currentMembersInfo = [
    {
-      photo: "framework/images/members/yun.jpg",
-      name: "Yun Wang",
-      description: "'24 Math and Computer Science"
-   },
-   {
-      photo: "framework/images/members/joni.jpg",
-      name: "Joni Li",
-      description: "Master of Computer Science"
-   },
-   {
-      photo: "framework/images/members/james.png",
-      name: "James Zhu",
-      description: "'25 Math and Computer Science"
-   },
-   {
       photo: "framework/images/members/himnish.jpg",
-      name: " Himnish Jain",
+      name: "Himnish Jain",
       description: "'25 dual degree in Computer Science and Statistics"
+   },
+   {
+      photo: "framework/images/members/eisha.jpg",
+      name: "Eisha Peyyeti",
+      description: "'25 Computer Science"
+   },
+   {
+      photo: "framework/images/members/jack.jpg",
+      name: "Jack Wang",
+      description: "'26 Computer Science"
    },
    {
       photo: "framework/images/members/isaac.jpg",
       name: "Isaac Zheng",
       description: "'25 Computer Science"
-   },
-   {
-      photo: "framework/images/members/yuxuan.jpg",
-      name: "Yuxuan Chen",
-      description: "'24 Math and Computer Science"
-   },
-   {
-      photo: "framework/images/members/chengyi.jpg",
-      name: "Chengyi Wang",
-      description: "'25 Computer Science"
-   },
-   {
-      photo: "framework/images/members/default.png",
-      name: "Arman Michael Mehdipour",
-      description: "Grad in Psych/CS"
-   },
-   {
-      photo: "framework/images/members/atharva.jpg",
-      name: "Atharva Naik",
-      description: "'24 Math and Computer Science"
    }
 ];
 
@@ -102,7 +77,7 @@ const pastMembers = ["Guru Nanma P", "Kedar Manda", "Chen Yang", "Ayan Bhowmick"
    "Ansh Sharma", "Brandon Dang", "Eric Armendariz", "Garima Sharma", "Alex Ackerman", "Jason Situ", "Nikhil Richard", "Timur Javid", 
    "Jiaming Zhang", "Harsh Deep", "Joanna Huang", "Cindy Feng", "Mona Jawad", "Sicong Zhang", "Yun Huang", "Blair Wang", 
    "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
-   "Xinyu Liu", "Xiping Sun"];
+   "Xinyu Liu", "Xiping Sun", "Yun Wang", "Joni Li", "James Zhu", "Yuxuan Chen", "Chengyi Wang", "Arman Michael Mehdipour", "Atharva Naik"];
 
 const currentMemberDiv = document.querySelector('.current-members');
 
