@@ -75,6 +75,7 @@ body::before {
    transform: rotate(0);
    font-size: 18px; 
    color:white;
+   align-items: center;
 }
 
 .accordion.active .section-subtitle .arrow {
@@ -95,6 +96,12 @@ body::before {
 and (max-width : 767px) {
    .section-title {
       font-size: 2rem !important;
+   }
+   .section-subtitle {
+      font-size: 17px !important;
+   }
+   .accordion .section-subtitle .arrow {
+      font-size: 14px; 
    }
 }
 
