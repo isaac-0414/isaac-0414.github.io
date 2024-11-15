@@ -62,9 +62,29 @@ const currentMembersInfo = [
       description: "'25 Computer Science"
    },
    {
+      photo: "framework/images/members/derin.jpg",
+      name: "Derin Sözen",
+      description: "'26 Computer Science"
+   },
+   {
+      photo: "framework/images/members/taniya.png",
+      name: "Taniya Agrawal",
+      description: "'27 Computer Science"
+   },
+   {
       photo: "framework/images/members/jack.jpg",
       name: "Jack Wang",
       description: "'26 Computer Science"
+   },
+   {
+      photo: "framework/images/members/shriya.jpg",
+      name: "Shriya Chockalingam",
+      description: "'26 Computer Science + Astronomy"
+   },
+   {
+      photo: "framework/images/members/kedar.png",
+      name: "Kedar Manda",
+      description: "'26 Computer Science and Philosophy"
    },
    {
       photo: "framework/images/members/isaac.jpg",
@@ -73,7 +93,7 @@ const currentMembersInfo = [
    }
 ];
 
-const pastMembers = ["Guru Nanma P", "Kedar Manda", "Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
+const pastMembers = ["Guru Nanma P", "Chen Yang", "Ayan Bhowmick", "Nathan Sparacino", "Ashank Kumar", "Garret Lualdi", "Anisha Gummadi", 
    "Ansh Sharma", "Brandon Dang", "Eric Armendariz", "Garima Sharma", "Alex Ackerman", "Jason Situ", "Nikhil Richard", "Timur Javid", 
    "Jiaming Zhang", "Harsh Deep", "Joanna Huang", "Cindy Feng", "Mona Jawad", "Sicong Zhang", "Yun Huang", "Blair Wang", 
    "William Foster", "Avinash Nathan", "Siyi Weng", "Aashi Agrawal", "Abhiram Tamvada", "Saurav Chittal", "Helen Ilkiu", 
